@@ -10,11 +10,12 @@ async function getPokemonHandler() {
     const error = document.getElementById('error-message');
     const pokemonCard = dom.pokemonCard;
 
-    if (!pokemonData) {
+    if (!pokemonData || pokemonName === '') {
         pokemonCard.innerHTML = '';
         pokemonCard.style.display = 'none';
         error.style.display='flex'
         error.innerText = 'Please, Enter a valid Pokemon Id Or Name';
+
 
     }else{
         error.style.display ='none';

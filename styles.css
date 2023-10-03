@@ -23,10 +23,9 @@ img{
     height: 100px;
 }
 .searchbox {
-width: 300px;
-height: 60px;
-margin: 20px 10px;
-
+    width: 300px;
+    height: 60px;
+    margin: 20px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +33,7 @@ margin: 20px 10px;
     border-radius: 10px;
     flex-wrap: wrap;
 }
+
 
 #search {
     width: 20%;
@@ -46,6 +46,11 @@ margin: 20px 10px;
     cursor: pointer;
     color:antiquewhite;
       
+}
+
+#search:hover {
+    transform: scale(1.1);
+
 }
 
 #pokemonName {
